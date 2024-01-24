@@ -1,0 +1,88 @@
+body.dark-mode {
+    background-color: #212530;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #1c1f26;
+    padding: 5px;
+    text-align: center;
+    color: #f8f9fa;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+textarea, .output {
+    width: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    background-color: #2a2f3a;
+    color: white;
+    transition: border-color 0.3s;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #1c1f26;
+    color: #f8f9fa;
+}
+
+@media (max-width: 600px) {
+    .container textarea, .container .output {
+        width: 95%;
+    }
+}
+.output {
+    width: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    background-color: #2a2f3a;
+    color: white;
+    transition: border-color 0.3s;
+    resize: vertical;
+    word-wrap: break-word; /* Ensure long words/links break and wrap */
+    overflow-wrap: break-word; /* More robust line breaking */
+    white-space: pre-wrap; /* Wrap at line breaks in preformatted text */
+}
