@@ -21,7 +21,7 @@ function encryptText() {
     var inputText = document.getElementById("textInput").value;
     var encrypted = LZString.compressToEncodedURIComponent(inputText);
     var output = document.getElementById("output");
-    output.innerHTML = `https://example.com/get.html#${encrypted}`;
+    output.innerHTML = `https://txtcrypt.cybar.xyz/get#${encrypted}`;
     document.getElementById("copyButton").style.display = "block";
 }
 
